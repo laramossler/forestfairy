@@ -19,6 +19,6 @@ Hazel will reference these for:
 - Plant profile research
 
 ## Weeks Added
-- [ ] Week 1: Introduction
+- [x] Week 1: Introduction to Food Forests (7 layers, food forest types, climate themes, indigenous management, permaculture ethics/principles, 150-species north star)
 - [ ] Week 2: (pending)
 - [ ] Week 3: (pending)
