@@ -186,6 +186,7 @@ def generate_report(db: Dict[str, Any], report_type: str) -> str:
     - guild: Show guild relationships
     - needs_profiles: Species that need plant profiles created
     - harvest_calendar: When to harvest different plant parts
+    - checklist_progress: Cross-reference with PNW edible species checklist
     """
 
     if report_type == "summary":
@@ -299,6 +300,42 @@ def generate_report(db: Dict[str, Any], report_type: str) -> str:
         for plant in plants:
             report += f"- [ ] **{plant['commonName']}** (*{plant['scientificName']}*)\n"
             report += f"  - Profile path: `{plant.get('profilePath', 'N/A')}`\n"
+        return report
+
+    elif report_type == "checklist_progress":
+        # High-priority PNW edible species from checklist
+        checklist_species = [
+            "Oregon Grape", "Salal", "Red Huckleberry", "Salmonberry",
+            "Thimbleberry", "Black Huckleberry", "Elderberry", "Wild Strawberry",
+            "Blackberry", "Serviceberry", "Saskatoon Berry", "Hawthorn",
+            "Wild Rose", "Stinging Nettle", "Camas", "Devil's Club",
+            "Miner's Lettuce", "Dandelion", "Chickweed", "Violet",
+            "Plantain", "Clover", "Fireweed", "Gooseberry", "Currant"
+        ]
+
+        plants = query_species(db, type="plant")
+        plant_names = [p["commonName"].lower() for p in plants]
+
+        confirmed = []
+        missing = []
+
+        for species in checklist_species:
+            if any(species.lower() in name for name in plant_names):
+                confirmed.append(species)
+            else:
+                missing.append(species)
+
+        report = "# PNW Edible Species Checklist Progress\n\n"
+        report += f"**Confirmed on Property:** {len(confirmed)}/{len(checklist_species)}\n\n"
+
+        report += "## ✓ Confirmed in Database\n"
+        for species in confirmed:
+            report += f"- [x] {species}\n"
+
+        report += "\n## ? Needs Field Verification\n"
+        for species in missing:
+            report += f"- [ ] {species}\n"
+
         return report
 
     else:
