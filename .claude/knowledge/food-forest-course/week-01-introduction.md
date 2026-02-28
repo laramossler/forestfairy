@@ -114,7 +114,7 @@ Some models include an 8th layer:
 - Columbia River Gorge microclimate effects: wind corridor, rain shadow variation
 - Wild Thyme Farm (SW Washington) is a course reference site in a similar bioregion
 
-## Design North Star: 150-Species Polyculture
+## Design North Star: 150-Plant-Species Polyculture
 Inspired by the Kenyah Dayak of Borneo who manage 150 tree species per hectare, Lara's long-term goal is to build toward this level of polyculture complexity across her 50 acres. This is a multi-generational aspiration, not a single-season planting plan.
 
 **The path there:**
@@ -122,7 +122,8 @@ Inspired by the Kenyah Dayak of Borneo who manage 150 tree species per hectare, 
 2. **Identify gaps by layer and function** — where are the niches that need filling?
 3. **Enrich incrementally** — add species season by season, guild by guild, letting each establishment inform the next.
 4. **Manage at the seedling stage** — following indigenous practice, shape what regenerates rather than only managing mature plants.
-5. **Track everything** — the species database is the tool that makes 150 species manageable. Every species gets a row, every observation feeds the system.
-6. **Think in decades** — the canopy you're designing won't be visible for 20-30 years. The understory and shrub layers will show results sooner.
+5. **Track everything** — the species database is the tool that makes 150 plant species manageable. Every species gets a row, every observation feeds the system.
+6. **Quantify abundance and uses** — Peters methodology: know what you have, what it provides, and how much you can sustainably harvest.
+7. **Think in decades** — the canopy you're designing won't be visible for 20-30 years. The understory and shrub layers will show results sooner.
 
-The species count in the database is a living metric of progress toward this goal.
+**Progress tracking:** The plant species count in the database (currently **4 of 150 plant species = 2.7%**) is a living metric of progress toward this goal. The total species database also tracks birds, mammals, fungi, and other wildlife as part of the broader ecological inventory.
