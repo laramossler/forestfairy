@@ -4,7 +4,18 @@
     "elevation": "2220 ft",
     "usdaZone": "7b/8a",
     "ecoregion": "Columbia River Gorge, Pacific Northwest temperate",
-    "lastUpdated": "2026-02-07"
+    "lastUpdated": "2026-02-28",
+    "speciesCounts": {
+      "total": 14,
+      "plants": 4,
+      "birds": 9,
+      "mammals": 1,
+      "other": 0
+    },
+    "goals": {
+      "plantSpeciesTarget": 150,
+      "practicum": "OP 601 Food Forest Practicum - Spring 2026"
+    }
   },
   "species": [
     {
@@ -209,6 +220,12 @@
       "status": "confirmed",
       "onProperty": true,
       "locations": ["throughout property, abundant"],
+      "abundance": {
+        "estimate": "500+",
+        "density": "abundant",
+        "trend": "stable",
+        "notes": "Widespread throughout property understory"
+      },
       "ecologicalFunctions": ["wildlife habitat", "pollinator attractor", "erosion control", "edible fruit", "medicinal"],
       "guildRelationships": ["sword fern", "salal", "red huckleberry", "Douglas fir"],
       "wildlifeValue": {
@@ -228,12 +245,42 @@
         "leafOut": "evergreen",
         "dormancy": "evergreen"
       },
+      "humanUses": {
+        "food": [
+          {
+            "part": "berries",
+            "preparation": "jelly, juice, wine",
+            "flavor": "tart",
+            "harvest": "July-September",
+            "sustainableYield": "10-20 lbs/year"
+          }
+        ],
+        "medicine": [
+          {
+            "part": "root bark",
+            "preparation": "tincture, tea",
+            "uses": "berberine extract (antibacterial, digestive)",
+            "harvest": "fall/winter",
+            "sustainableYield": "minimal - only from pruned/damaged plants"
+          }
+        ],
+        "fiber": [],
+        "craft": [
+          {
+            "part": "inner bark",
+            "preparation": "dye extraction",
+            "product": "yellow dye",
+            "harvest": "spring",
+            "sustainableYield": "from pruned branches only"
+          }
+        ],
+        "other": []
+      },
       "health": "thriving",
       "firstObserved": "2026-01",
       "observations": [
         "2026-01: Abundant throughout property. Lara interested in propagation - rhizome division recommended for late Oct-Nov or Mar-Apr."
       ],
-      "uses": ["berries for jelly/juice/wine (tart)", "root bark for berberine (medicinal)", "yellow dye from inner bark"],
       "propagation": ["rhizome division (90% success)", "semi-hardwood cuttings Aug-Sep (50-70%)", "seed (20-40%, slow)"],
       "practicumNotes": "",
       "profileComplete": false,
@@ -250,6 +297,12 @@
       "status": "confirmed",
       "onProperty": true,
       "locations": ["understory throughout"],
+      "abundance": {
+        "estimate": "1000+",
+        "density": "very abundant",
+        "trend": "stable",
+        "notes": "Dominant understory ground cover throughout property"
+      },
       "ecologicalFunctions": ["erosion control", "wildlife habitat", "soil building"],
       "guildRelationships": ["Oregon grape", "salal", "red huckleberry", "Douglas fir"],
       "wildlifeValue": {
@@ -268,6 +321,21 @@
         "fruit": "n/a",
         "leafOut": "evergreen",
         "dormancy": "evergreen"
+      },
+      "humanUses": {
+        "food": [],
+        "medicine": [],
+        "fiber": [
+          {
+            "part": "fronds",
+            "preparation": "fresh or dried",
+            "product": "weaving, basket lining, mulch",
+            "harvest": "year-round",
+            "sustainableYield": "5-10% of fronds per patch per year"
+          }
+        ],
+        "craft": [],
+        "other": []
       },
       "health": "thriving",
       "firstObserved": "2026-01",
@@ -289,6 +357,12 @@
       "status": "confirmed",
       "onProperty": true,
       "locations": ["near cabin (Brown Creepers observed on trunk)"],
+      "abundance": {
+        "estimate": "50-100",
+        "density": "common",
+        "trend": "stable",
+        "notes": "Mixed throughout property in canopy layer"
+      },
       "ecologicalFunctions": ["canopy structure", "wildlife habitat", "windbreak"],
       "guildRelationships": ["sword fern", "Oregon grape", "salal"],
       "wildlifeValue": {
@@ -301,6 +375,37 @@
         "water": "moderate",
         "soil": "moist, well-drained",
         "zones": "5-8"
+      },
+      "humanUses": {
+        "food": [
+          {
+            "part": "young tips",
+            "preparation": "tea (vitamin C)",
+            "flavor": "citrus-like",
+            "harvest": "spring (new growth)",
+            "sustainableYield": "tip pruning only - minimal impact"
+          }
+        ],
+        "medicine": [
+          {
+            "part": "pitch/resin",
+            "preparation": "salve, antiseptic",
+            "uses": "wound care",
+            "harvest": "year-round from wounds",
+            "sustainableYield": "opportunistic collection only"
+          }
+        ],
+        "fiber": [],
+        "craft": [
+          {
+            "part": "boughs",
+            "preparation": "fresh",
+            "product": "wreaths, garlands, decoration",
+            "harvest": "fall/winter",
+            "sustainableYield": "pruning only - 5-10 boughs/year"
+          }
+        ],
+        "other": []
       },
       "health": "healthy",
       "firstObserved": "2026-01",
@@ -322,6 +427,12 @@
       "status": "confirmed",
       "onProperty": true,
       "locations": ["throughout property"],
+      "abundance": {
+        "estimate": "100-200",
+        "density": "abundant",
+        "trend": "stable",
+        "notes": "Dominant canopy species throughout property"
+      },
       "ecologicalFunctions": ["canopy structure", "wildlife habitat", "windbreak", "mycorrhizal host"],
       "guildRelationships": ["sword fern", "Oregon grape", "salal", "red huckleberry"],
       "wildlifeValue": {
@@ -334,6 +445,37 @@
         "water": "moderate",
         "soil": "well-drained",
         "zones": "4-8"
+      },
+      "humanUses": {
+        "food": [
+          {
+            "part": "young tips",
+            "preparation": "tea, flavoring",
+            "flavor": "citrus-pine",
+            "harvest": "spring (new growth)",
+            "sustainableYield": "tip pruning only - minimal impact"
+          }
+        ],
+        "medicine": [
+          {
+            "part": "pitch/resin",
+            "preparation": "salve, chewing gum",
+            "uses": "wound care, respiratory",
+            "harvest": "year-round from wounds",
+            "sustainableYield": "opportunistic collection only"
+          }
+        ],
+        "fiber": [],
+        "craft": [
+          {
+            "part": "boughs",
+            "preparation": "fresh",
+            "product": "wreaths, garlands, decoration",
+            "harvest": "fall/winter",
+            "sustainableYield": "pruning only - 10-20 boughs/year"
+          }
+        ],
+        "other": []
       },
       "health": "healthy",
       "firstObserved": "2026-01",
