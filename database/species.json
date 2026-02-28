@@ -215,7 +215,10 @@
       "scientificName": "Mahonia aquifolium",
       "type": "plant",
       "family": "Berberidaceae",
+      "etymology": "Named for Bernard M'Mahon, Irish-American horticulturist who helped popularize Lewis & Clark specimens. 'Aquifolium' means holly-leaved, for the spiny evergreen foliage.",
+      "commonNames": "Oregon Grape, Holly-leaved Barberry, Mountain Grape",
       "nativeStatus": "native",
+      "nativeRange": "Pacific Northwest, British Columbia to Northern California",
       "foodForestLayer": "shrub",
       "status": "confirmed",
       "onProperty": true,
@@ -226,6 +229,14 @@
         "trend": "stable",
         "notes": "Widespread throughout property understory"
       },
+      "form": {
+        "type": "Evergreen shrub",
+        "height": "3-6 ft",
+        "spread": "3-5 ft",
+        "growth": "Moderate",
+        "lifespan": "30+ years",
+        "roots": "Shallow, spreading rhizomes that colonize"
+      },
       "ecologicalFunctions": ["wildlife habitat", "pollinator attractor", "erosion control", "edible fruit", "medicinal"],
       "guildRelationships": ["sword fern", "salal", "red huckleberry", "Douglas fir"],
       "wildlifeValue": {
@@ -234,46 +245,51 @@
         "mammals": []
       },
       "growingConditions": {
-        "sun": "part shade to full sun",
-        "water": "moderate, drought tolerant once established",
-        "soil": "adaptable, well-drained",
-        "zones": "5-9"
+        "sun": "Part shade to full sun (more fruit in sun)",
+        "water": "Moderate — drought tolerant once established",
+        "soil": "Adaptable — well-drained, tolerates poor soil",
+        "zones": "5-9",
+        "tolerance": "Drought, shade, deer resistant",
+        "pests": "Generally pest-free. Possible rust, leaf spot in wet conditions."
       },
       "phenology": {
-        "bloom": "March-April",
-        "fruit": "July-September",
-        "leafOut": "evergreen",
-        "dormancy": "evergreen"
+        "leafOut": "Evergreen",
+        "bloom": "March-April · bright yellow racemes · fragrant · pollinated by early bees",
+        "fruit": "July-September · blue-purple berries with waxy bloom · clusters",
+        "dormancy": "Evergreen"
       },
       "humanUses": {
         "food": [
           {
             "part": "berries",
-            "preparation": "jelly, juice, wine",
-            "flavor": "tart",
+            "preparation": "jelly, juice, wine, dried",
+            "flavor": "tart, grape-like",
             "harvest": "July-September",
-            "sustainableYield": "10-20 lbs/year"
+            "sustainableYield": "10-20 lbs/year",
+            "notes": "High in vitamin C. Best cooked — very tart raw."
           }
         ],
         "medicine": [
           {
             "part": "root bark",
             "preparation": "tincture, tea",
-            "uses": "berberine extract (antibacterial, digestive)",
+            "uses": "berberine extract (antibacterial, digestive), liver support",
             "harvest": "fall/winter",
-            "sustainableYield": "minimal - only from pruned/damaged plants"
+            "sustainableYield": "minimal - only from pruned/damaged plants",
+            "notes": "Powerful antimicrobial. Consult herbalist for dosage."
           }
         ],
         "fiber": [],
         "craft": [
           {
-            "part": "inner bark",
+            "part": "inner bark and roots",
             "preparation": "dye extraction",
             "product": "yellow dye",
             "harvest": "spring",
             "sustainableYield": "from pruned branches only"
           }
         ],
+        "cultural": "Used by Coast Salish and Plateau peoples for food and medicine. Berries eaten fresh or dried, root bark for skin conditions and digestive issues.",
         "other": []
       },
       "health": "thriving",
@@ -282,9 +298,22 @@
         "2026-01: Abundant throughout property. Lara interested in propagation - rhizome division recommended for late Oct-Nov or Mar-Apr."
       ],
       "propagation": ["rhizome division (90% success)", "semi-hardwood cuttings Aug-Sep (50-70%)", "seed (20-40%, slow)"],
-      "practicumNotes": "",
-      "profileComplete": false,
-      "profilePath": "plant-profiles/oregon-grape.md"
+      "nurseries": "Raintree Nursery, One Green World, local native plant sales, easy to propagate from existing specimens",
+      "propertyNotes": "Thriving in understory throughout the 50 acres. Particularly dense stands along edges and in partial sun. Excellent candidate for guild expansion with comfrey and native strawberry groundcover. Already supporting robust bird and pollinator populations. Could sustainably harvest 15-20 lbs berries annually without impacting wildlife.",
+      "bibliography": [
+        "Natural Capital Plant Database — Mahonia aquifolium",
+        "Plants for a Future — pfaf.org — Mahonia aquifolium",
+        "USDA PLANTS Database — Mahonia aquifolium",
+        "Oregon State University Extension — Growing Oregon Grape",
+        "Medicinal Plants of the Pacific West — Michael Moore (2011)",
+        "Native American Ethnobotany — Daniel Moerman (1998)",
+        "Coast Salish Traditional Plant Use — Nancy Turner"
+      ],
+      "practicumNotes": "Week 1 profile — demonstrates shrub layer, dual food/medicine function, native pollinator support, propagation potential",
+      "profileComplete": true,
+      "profilePath": "plant-profiles/oregon-grape.md",
+      "profileDate": "2026-03",
+      "weekNumber": 1
     },
     {
       "id": "western-sword-fern",

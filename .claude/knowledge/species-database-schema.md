@@ -240,6 +240,112 @@ Enable queries like:
 }
 ```
 
+## Profile Generation Fields (for Beautiful Plant Profiles)
+
+### Additional Fields for Static Profile Pages
+
+For generating beautiful,printable plant profile pages (practicum documentation), plants need these enriched fields:
+
+```json
+{
+  "etymology": "Named for Bernard M'Mahon, Irish-American horticulturist. 'Aquifolium' means holly-leaved.",
+  "commonNames": "Oregon Grape, Holly-leaved Barberry, Mountain Grape",
+  "nativeRange": "Pacific Northwest, British Columbia to Northern California",
+
+  "form": {
+    "type": "Evergreen shrub",
+    "height": "3-6 ft",
+    "spread": "3-5 ft",
+    "growth": "Moderate",
+    "lifespan": "30+ years",
+    "roots": "Shallow, spreading rhizomes"
+  },
+
+  "growingConditions": {
+    "sun": "Part shade to full sun",
+    "water": "Moderate — drought tolerant once established",
+    "soil": "Adaptable — well-drained, tolerates poor soil",
+    "zones": "5-9",
+    "tolerance": "Drought, shade, deer resistant",
+    "pests": "Generally pest-free. Possible rust, leaf spot."
+  },
+
+  "phenology": {
+    "leafOut": "Evergreen",
+    "bloom": "March-April · bright yellow racemes · fragrant · pollinated by early bees",
+    "fruit": "July-September · blue-purple berries with waxy bloom",
+    "dormancy": "Evergreen"
+  },
+
+  "humanUses": {
+    "food": [...],
+    "medicine": [...],
+    "cultural": "Used by Coast Salish peoples for food and medicine..."
+  },
+
+  "nurseries": "Raintree Nursery, One Green World, local native plant sales",
+  "propertyNotes": "Thriving in understory throughout 50 acres. Excellent guild candidate...",
+
+  "bibliography": [
+    "Natural Capital Plant Database — Mahonia aquifolium",
+    "Plants for a Future — pfaf.org",
+    "USDA PLANTS Database",
+    "Medicinal Plants of the Pacific West — Michael Moore (2011)",
+    "Native American Ethnobotany — Daniel Moerman (1998)"
+  ],
+
+  "profileDate": "2026-03",
+  "weekNumber": 1,
+  "profileComplete": true
+}
+```
+
+### Profile-Specific Field Descriptions
+
+**etymology** (string): Word origin and naming history. Makes the profile more engaging and educational.
+
+**commonNames** (string): Comma-separated list of alternative common names.
+
+**nativeRange** (string): Geographic native range for this species.
+
+**form** (object): Detailed morphological data:
+- `type`: Growth form (evergreen shrub, deciduous tree, etc.)
+- `height`: Mature height range
+- `spread`: Mature spread/width
+- `growth`: Growth rate (fast, moderate, slow)
+- `lifespan`: Expected lifespan
+- `roots`: Root system description (shallow, deep, spreading, etc.)
+
+**growingConditions.tolerance** (string): Environmental tolerances (drought, shade, wind, deer, etc.)
+
+**growingConditions.pests** (string): Common pests and diseases, resistance notes.
+
+**phenology** (object): Enhanced with descriptive detail:
+- Each field can include detailed description after the timing
+- Example: `"bloom": "March-April · bright yellow racemes · fragrant · pollinated by early bees"`
+
+**humanUses.cultural** (string): Indigenous and cultural uses, traditional knowledge (with proper attribution and respect).
+
+**nurseries** (string): Where to source this plant (nurseries, propagation methods, local sources).
+
+**propertyNotes** (string): Specific observations and recommendations for this plant on Lara's 50 acres. Connects database to actual land.
+
+**bibliography** (array of strings): Sources used to compile profile. Essential for practicum academic integrity. Use format: "Source Name — URL or Author (Year)".
+
+**profileDate** (string): When profile was completed (YYYY-MM format).
+
+**weekNumber** (integer): Which practicum week this profile was completed (for collection organization).
+
+**profileComplete** (boolean): Whether this profile has all fields filled and is ready for static generation.
+
+## Static Profile Page Generation
+
+Profiles with `profileComplete: true` are ready to be rendered as beautiful, printable pages for the practicum portfolio. The static generator reads `species.json` and creates individual HTML pages for each completed profile.
+
+**Build command:** `npm run build:profiles`
+
+**Output:** `/profiles/[species-id].html` with heirloom botanical guide aesthetic.
+
 ## Future Considerations
 
 ### Harvest Tracking
