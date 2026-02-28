@@ -1,0 +1,348 @@
+{
+  "metadata": {
+    "property": "50 acres, White Salmon, WA",
+    "elevation": "2220 ft",
+    "usdaZone": "7b/8a",
+    "ecoregion": "Columbia River Gorge, Pacific Northwest temperate",
+    "lastUpdated": "2026-02-07"
+  },
+  "species": [
+    {
+      "id": "great-horned-owl",
+      "commonName": "Great Horned Owl",
+      "scientificName": "Bubo virginianus",
+      "type": "bird",
+      "family": "Strigidae",
+      "nativeStatus": "native",
+      "seasonalStatus": "year-round resident",
+      "status": "confirmed",
+      "onProperty": true,
+      "locations": ["near main cabin", "canopy"],
+      "ecologicalRole": ["rodent control", "apex predator"],
+      "habitatIndicator": "Mature trees for nesting, healthy prey base (rabbits, squirrels, woodrats). Mated pair indicates breeding territory.",
+      "supportingPlants": ["Douglas fir (nesting)", "open edges (hunting)"],
+      "firstObserved": "2026-01",
+      "observations": [
+        "2026-01: Mated pair duet ~30 min at 9pm, very close to left of main cabin. Courtship/territory behavior."
+      ]
+    },
+    {
+      "id": "northern-flicker",
+      "commonName": "Northern Flicker",
+      "scientificName": "Colaptes auratus",
+      "type": "bird",
+      "family": "Picidae",
+      "nativeStatus": "native",
+      "seasonalStatus": "year-round resident",
+      "status": "confirmed",
+      "onProperty": true,
+      "locations": ["near cabin area"],
+      "ecologicalRole": ["pest control", "cavity creator"],
+      "habitatIndicator": "Standing dead wood (snags) present. Ground-dwelling ant populations. Cavity creates habitat for subsequent nesters (chickadees, nuthatches, flying squirrels, bees).",
+      "supportingPlants": ["dead/dying trees (nesting)", "open ground areas (foraging)"],
+      "firstObserved": "2026-01",
+      "observations": [
+        "2026-01: Building a nest. Indicates good snag habitat on property."
+      ]
+    },
+    {
+      "id": "brown-creeper",
+      "commonName": "Brown Creeper",
+      "scientificName": "Certhia americana",
+      "type": "bird",
+      "family": "Certhiidae",
+      "nativeStatus": "native",
+      "seasonalStatus": "year-round resident",
+      "status": "confirmed",
+      "onProperty": true,
+      "locations": ["grand fir near cabin"],
+      "ecologicalRole": ["pest control", "indicator species"],
+      "habitatIndicator": "Mature conifers with deeply furrowed bark. Healthy invertebrate populations in bark crevices.",
+      "supportingPlants": ["grand fir", "Douglas fir", "mature conifers with textured bark"],
+      "firstObserved": "2026-01",
+      "observations": [
+        "2026-01: Flock observed dancing up grand fir near cabin window. Possibly also seen near sunset in field (unconfirmed - may have been sparrows)."
+      ]
+    },
+    {
+      "id": "ruffed-grouse",
+      "commonName": "Ruffed Grouse",
+      "scientificName": "Bonasa umbellus",
+      "type": "bird",
+      "family": "Phasianidae",
+      "nativeStatus": "native",
+      "seasonalStatus": "year-round resident",
+      "status": "confirmed",
+      "onProperty": true,
+      "locations": ["creek clearing (driveway crossing)", "creek corridor (second location, small opening)"],
+      "ecologicalRole": ["seed disperser", "indicator species"],
+      "habitatIndicator": "Structural complexity in forest understory. Dense shrubby cover, fallen logs, good edge habitat between forest and openings. Healthy ecotone.",
+      "supportingPlants": ["hawthorn", "dogwood", "wild rose", "snowberry", "serviceberry", "Oregon grape", "salmonberry", "hazelnut"],
+      "firstObserved": "2026-01",
+      "observations": [
+        "2026-01: Seen twice near creek. First location: clearing where driveway crosses creek. Second location: another small opening along creek corridor. Photographed (well-camouflaged). Alert posture but not fleeing - habituated to some human presence.",
+        "2026-01: Possible tracks in snow near creek area."
+      ]
+    },
+    {
+      "id": "red-breasted-nuthatch",
+      "commonName": "Red-breasted Nuthatch",
+      "scientificName": "Sitta canadensis",
+      "type": "bird",
+      "family": "Sittidae",
+      "nativeStatus": "native",
+      "seasonalStatus": "year-round resident",
+      "status": "confirmed",
+      "onProperty": true,
+      "locations": ["along route from cabin to Acme Road"],
+      "ecologicalRole": ["pest control"],
+      "habitatIndicator": "Conifer forest with good seed and insect populations.",
+      "supportingPlants": ["Douglas fir", "grand fir", "conifers"],
+      "firstObserved": "2026-01",
+      "observations": [
+        "2026-01: Heard along walk from main cabin to Acme Road."
+      ]
+    },
+    {
+      "id": "song-sparrow",
+      "commonName": "Song Sparrow",
+      "scientificName": "Melospiza melodia",
+      "type": "bird",
+      "family": "Passerellidae",
+      "nativeStatus": "native",
+      "seasonalStatus": "year-round resident",
+      "status": "confirmed",
+      "onProperty": true,
+      "locations": ["along route from cabin to Acme Road"],
+      "ecologicalRole": ["seed disperser", "indicator species"],
+      "habitatIndicator": "Edge habitat, brushy areas, transition zones.",
+      "supportingPlants": ["native shrubs", "grasses", "edge habitat vegetation"],
+      "firstObserved": "2026-01",
+      "observations": [
+        "2026-01: Heard along walk from main cabin to Acme Road."
+      ]
+    },
+    {
+      "id": "chestnut-backed-chickadee",
+      "commonName": "Chestnut-backed Chickadee",
+      "scientificName": "Poecile rufescens",
+      "type": "bird",
+      "family": "Paridae",
+      "nativeStatus": "native",
+      "seasonalStatus": "year-round resident",
+      "status": "confirmed",
+      "onProperty": true,
+      "locations": ["along route from cabin to Acme Road"],
+      "ecologicalRole": ["pest control"],
+      "habitatIndicator": "Conifer and mixed forest with good insect populations.",
+      "supportingPlants": ["Douglas fir", "grand fir", "conifers"],
+      "firstObserved": "2026-01",
+      "observations": [
+        "2026-01: Heard along walk from main cabin to Acme Road."
+      ]
+    },
+    {
+      "id": "golden-crowned-kinglet",
+      "commonName": "Golden-crowned Kinglet",
+      "scientificName": "Regulus satrapa",
+      "type": "bird",
+      "family": "Regulidae",
+      "nativeStatus": "native",
+      "seasonalStatus": "year-round resident",
+      "status": "confirmed",
+      "onProperty": true,
+      "locations": ["along route from cabin to Acme Road"],
+      "ecologicalRole": ["pest control"],
+      "habitatIndicator": "Dense conifer canopy. Specialist that gleans insects from needle tips.",
+      "supportingPlants": ["Douglas fir", "grand fir", "dense conifers"],
+      "firstObserved": "2026-01",
+      "observations": [
+        "2026-01: Heard along walk from main cabin to Acme Road."
+      ]
+    },
+    {
+      "id": "northern-harrier",
+      "commonName": "Northern Harrier",
+      "scientificName": "Circus hudsonius",
+      "type": "bird",
+      "family": "Accipitridae",
+      "nativeStatus": "native",
+      "seasonalStatus": "year-round resident",
+      "status": "reported",
+      "onProperty": true,
+      "locations": ["open fields"],
+      "ecologicalRole": ["rodent control", "apex predator"],
+      "habitatIndicator": "Open grassland/meadow with healthy rodent populations. Nests on ground in thick vegetation.",
+      "supportingPlants": ["native grasses", "thick ground vegetation for nesting"],
+      "firstObserved": null,
+      "observations": [
+        "2026-01: Reported by neighbor - resident pair. Not yet personally observed."
+      ]
+    },
+    {
+      "id": "douglas-squirrel",
+      "commonName": "Douglas Squirrel (Chickaree)",
+      "scientificName": "Tamiasciurus douglasii",
+      "type": "mammal",
+      "family": "Sciuridae",
+      "nativeStatus": "native",
+      "seasonalStatus": "year-round resident",
+      "status": "confirmed",
+      "onProperty": true,
+      "locations": ["deck near cabin", "conifers"],
+      "ecologicalRole": ["seed disperser", "mycorrhizal spore disperser", "forest regeneration"],
+      "habitatIndicator": "Mature conifers producing good cone crops. Healthy mycorrhizal network. Structural complexity.",
+      "supportingPlants": ["Douglas fir", "grand fir", "hemlock", "conifers"],
+      "firstObserved": "2026-01",
+      "observations": [
+        "2026-01: Photographed on deck near cabin. Regular visitor."
+      ]
+    },
+    {
+      "id": "oregon-grape-tall",
+      "commonName": "Tall Oregon Grape",
+      "scientificName": "Mahonia aquifolium",
+      "type": "plant",
+      "family": "Berberidaceae",
+      "nativeStatus": "native",
+      "foodForestLayer": "shrub",
+      "status": "confirmed",
+      "onProperty": true,
+      "locations": ["throughout property, abundant"],
+      "ecologicalFunctions": ["wildlife habitat", "pollinator attractor", "erosion control", "edible fruit", "medicinal"],
+      "guildRelationships": ["sword fern", "salal", "red huckleberry", "Douglas fir"],
+      "wildlifeValue": {
+        "birds": ["robins", "waxwings", "band-tailed pigeons"],
+        "pollinators": ["native bees", "hummingbirds"],
+        "mammals": []
+      },
+      "growingConditions": {
+        "sun": "part shade to full sun",
+        "water": "moderate, drought tolerant once established",
+        "soil": "adaptable, well-drained",
+        "zones": "5-9"
+      },
+      "phenology": {
+        "bloom": "March-April",
+        "fruit": "July-September",
+        "leafOut": "evergreen",
+        "dormancy": "evergreen"
+      },
+      "health": "thriving",
+      "firstObserved": "2026-01",
+      "observations": [
+        "2026-01: Abundant throughout property. Lara interested in propagation - rhizome division recommended for late Oct-Nov or Mar-Apr."
+      ],
+      "uses": ["berries for jelly/juice/wine (tart)", "root bark for berberine (medicinal)", "yellow dye from inner bark"],
+      "propagation": ["rhizome division (90% success)", "semi-hardwood cuttings Aug-Sep (50-70%)", "seed (20-40%, slow)"],
+      "practicumNotes": "",
+      "profileComplete": false,
+      "profilePath": "plant-profiles/oregon-grape.md"
+    },
+    {
+      "id": "western-sword-fern",
+      "commonName": "Western Sword Fern",
+      "scientificName": "Polystichum munitum",
+      "type": "plant",
+      "family": "Dryopteridaceae",
+      "nativeStatus": "native",
+      "foodForestLayer": "ground cover",
+      "status": "confirmed",
+      "onProperty": true,
+      "locations": ["understory throughout"],
+      "ecologicalFunctions": ["erosion control", "wildlife habitat", "soil building"],
+      "guildRelationships": ["Oregon grape", "salal", "red huckleberry", "Douglas fir"],
+      "wildlifeValue": {
+        "birds": [],
+        "pollinators": [],
+        "mammals": ["salamanders", "frogs", "ground-nesting birds (cover)"]
+      },
+      "growingConditions": {
+        "sun": "shade to part shade",
+        "water": "moderate",
+        "soil": "adaptable, prefers moist",
+        "zones": "5-9"
+      },
+      "phenology": {
+        "bloom": "n/a (spore-bearing)",
+        "fruit": "n/a",
+        "leafOut": "evergreen",
+        "dormancy": "evergreen"
+      },
+      "health": "thriving",
+      "firstObserved": "2026-01",
+      "observations": [
+        "2026-01: Present throughout understory. Signals healthy forest conditions."
+      ],
+      "practicumNotes": "",
+      "profileComplete": false,
+      "profilePath": "plant-profiles/western-sword-fern.md"
+    },
+    {
+      "id": "grand-fir",
+      "commonName": "Grand Fir",
+      "scientificName": "Abies grandis",
+      "type": "plant",
+      "family": "Pinaceae",
+      "nativeStatus": "native",
+      "foodForestLayer": "canopy",
+      "status": "confirmed",
+      "onProperty": true,
+      "locations": ["near cabin (Brown Creepers observed on trunk)"],
+      "ecologicalFunctions": ["canopy structure", "wildlife habitat", "windbreak"],
+      "guildRelationships": ["sword fern", "Oregon grape", "salal"],
+      "wildlifeValue": {
+        "birds": ["brown creepers", "golden-crowned kinglets", "chickadees", "nuthatches"],
+        "pollinators": [],
+        "mammals": ["Douglas squirrel"]
+      },
+      "growingConditions": {
+        "sun": "full sun to part shade",
+        "water": "moderate",
+        "soil": "moist, well-drained",
+        "zones": "5-8"
+      },
+      "health": "healthy",
+      "firstObserved": "2026-01",
+      "observations": [
+        "2026-01: Brown Creepers observed foraging on trunk near cabin."
+      ],
+      "practicumNotes": "",
+      "profileComplete": false,
+      "profilePath": "plant-profiles/grand-fir.md"
+    },
+    {
+      "id": "douglas-fir",
+      "commonName": "Douglas Fir",
+      "scientificName": "Pseudotsuga menziesii",
+      "type": "plant",
+      "family": "Pinaceae",
+      "nativeStatus": "native",
+      "foodForestLayer": "canopy",
+      "status": "confirmed",
+      "onProperty": true,
+      "locations": ["throughout property"],
+      "ecologicalFunctions": ["canopy structure", "wildlife habitat", "windbreak", "mycorrhizal host"],
+      "guildRelationships": ["sword fern", "Oregon grape", "salal", "red huckleberry"],
+      "wildlifeValue": {
+        "birds": ["brown creepers", "nuthatches", "chickadees", "woodpeckers"],
+        "pollinators": [],
+        "mammals": ["Douglas squirrel (primary cone source)"]
+      },
+      "growingConditions": {
+        "sun": "full sun",
+        "water": "moderate",
+        "soil": "well-drained",
+        "zones": "4-8"
+      },
+      "health": "healthy",
+      "firstObserved": "2026-01",
+      "observations": [
+        "2026-01: Foundational canopy species on property."
+      ],
+      "practicumNotes": "",
+      "profileComplete": false,
+      "profilePath": "plant-profiles/douglas-fir.md"
+    }
+  ]
+}
