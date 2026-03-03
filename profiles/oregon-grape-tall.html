@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tall Oregon Grape · Mahonia aquifolium</title>
+  <style>
+/* Heirloom Botanical Guide Aesthetic */
+
+:root {
+  --cream: #fefdf8;
+  --dark-green: #2d4a2b;
+  --medium-green: #4a7c59;
+  --sage: #9caf88;
+  --brown: #6b5b4f;
+  --light-brown: #a89284;
+  --gold: #d4af37;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+  background: var(--cream);
+  color: var(--dark-green);
+  line-height: 1.7;
+  padding: 2rem;
+}
+
+.plant-profile {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  padding: 3rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--sage);
+  page-break-inside: avoid;
+}
+
+/* Header */
+.profile-header {
+  text-align: center;
+  border-bottom: 3px double var(--medium-green);
+  padding-bottom: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.common-name {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--dark-green);
+  margin-bottom: 0.5rem;
+  font-variant: small-caps;
+  letter-spacing: 1px;
+}
+
+.scientific-name {
+  font-style: italic;
+  font-size: 1.3rem;
+  color: var(--medium-green);
+  margin-bottom: 0.3rem;
+}
+
+.family {
+  font-size: 0.95rem;
+  color: var(--light-brown);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+/* Sections */
+.section {
+  margin-bottom: 2rem;
+  page-break-inside: avoid;
+}
+
+.section h2 {
+  font-size: 1.4rem;
+  color: var(--medium-green);
+  margin-bottom: 1rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--sage);
+  font-variant: small-caps;
+  letter-spacing: 1px;
+}
+
+.section h3 {
+  font-size: 1.1rem;
+  color: var(--dark-green);
+  margin-top: 1.2rem;
+  margin-bottom: 0.6rem;
+  font-weight: 600;
+}
+
+/* Etymology */
+.etymology {
+  font-style: italic;
+  color: var(--brown);
+  background: var(--cream);
+  padding: 1rem 1.5rem;
+  border-left: 3px solid var(--gold);
+}
+
+/* Meta Info */
+.meta-info {
+  background: var(--cream);
+  padding: 1rem 1.5rem;
+  border-radius: 4px;
+}
+
+.meta-row {
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+
+.meta-row:last-child {
+  margin-bottom: 0;
+}
+
+.meta-label {
+  font-weight: 600;
+  color: var(--brown);
+  min-width: 140px;
+}
+
+.meta-value {
+  color: var(--dark-green);
+}
+
+/* Form Grid */
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8rem 1.5rem;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--brown);
+  margin-bottom: 0.2rem;
+  font-weight: 600;
+}
+
+.form-value {
+  color: var(--dark-green);
+  font-size: 1rem;
+}
+
+/* Conditions Grid */
+.conditions-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem 1.5rem;
+}
+
+.condition-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.condition-label {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--brown);
+  margin-bottom: 0.2rem;
+  font-weight: 600;
+}
+
+.condition-value {
+  color: var(--dark-green);
+}
+
+/* Phenology Timeline */
+.phenology-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.phenology-item {
+  display: flex;
+  flex-direction: column;
+  padding: 0.8rem;
+  background: var(--cream);
+  border-left: 3px solid var(--medium-green);
+}
+
+.phenology-label {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--brown);
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+}
+
+.phenology-value {
+  color: var(--dark-green);
+  line-height: 1.6;
+}
+
+/* Human Uses */
+.use-category {
+  margin-bottom: 1.5rem;
+}
+
+.use-category:last-child {
+  margin-bottom: 0;
+}
+
+.use-detail {
+  background: var(--cream);
+  padding: 1rem 1.5rem;
+  margin-top: 0.8rem;
+  border-left: 3px solid var(--sage);
+}
+
+.use-detail p {
+  margin-bottom: 0.5rem;
+}
+
+.use-detail p:last-child {
+  margin-bottom: 0;
+}
+
+.use-detail strong {
+  color: var(--brown);
+  font-weight: 600;
+}
+
+.use-notes {
+  font-style: italic;
+  color: var(--medium-green);
+  margin-top: 0.8rem;
+  padding-top: 0.8rem;
+  border-top: 1px dashed var(--sage);
+}
+
+.cultural-note {
+  background: var(--cream);
+  padding: 1rem 1.5rem;
+  border-left: 3px solid var(--gold);
+  font-style: italic;
+  color: var(--brown);
+}
+
+/* Propagation */
+.propagation-list {
+  list-style: none;
+  padding: 0;
+}
+
+.propagation-list li {
+  padding: 0.6rem 1rem;
+  margin-bottom: 0.5rem;
+  background: var(--cream);
+  border-left: 3px solid var(--sage);
+}
+
+.propagation-list li:before {
+  content: "→ ";
+  color: var(--medium-green);
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+/* Property Notes */
+.property-notes {
+  background: linear-gradient(to right, var(--cream), white);
+  padding: 1.5rem;
+  border: 2px solid var(--sage);
+  border-radius: 4px;
+}
+
+.property-notes h2 {
+  color: var(--dark-green);
+  border-bottom: 2px solid var(--medium-green);
+}
+
+.property-notes p {
+  color: var(--dark-green);
+  line-height: 1.8;
+}
+
+/* Bibliography */
+.bibliography ul {
+  list-style: none;
+  padding: 0;
+}
+
+.bibliography li {
+  padding: 0.5rem 0;
+  color: var(--brown);
+  font-size: 0.95rem;
+  border-bottom: 1px dotted var(--sage);
+}
+
+.bibliography li:last-child {
+  border-bottom: none;
+}
+
+/* Footer */
+.profile-footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 3px double var(--medium-green);
+  text-align: center;
+}
+
+.profile-footer p {
+  font-size: 0.9rem;
+  color: var(--light-brown);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Print Styles */
+@media print {
+  body {
+    background: white;
+    padding: 0;
+  }
+
+  .plant-profile {
+    box-shadow: none;
+    border: none;
+    padding: 1.5rem;
+  }
+
+  .section {
+    page-break-inside: avoid;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .plant-profile {
+    padding: 1.5rem;
+  }
+
+  .form-grid,
+  .conditions-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .common-name {
+    font-size: 2rem;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="plant-profile">
+    
+    <div class="profile-header">
+      <h1 class="common-name">Tall Oregon Grape</h1>
+      <p class="scientific-name">Mahonia aquifolium</p>
+      <p class="family">Berberidaceae</p>
+    </div>
+  
+    <section class="section">
+      <h2>Etymology</h2>
+      <p class="etymology">Named for Bernard M'Mahon, Irish-American horticulturist who helped popularize Lewis & Clark specimens. 'Aquifolium' means holly-leaved, for the spiny evergreen foliage.</p>
+    </section>
+    
+    <section class="section meta-info">
+      <div class="meta-row">
+        <span class="meta-label">Also known as:</span>
+        <span class="meta-value">Oregon Grape, Holly-leaved Barberry, Mountain Grape</span>
+      </div>
+    
+      <div class="meta-row">
+        <span class="meta-label">Native range:</span>
+        <span class="meta-value">Pacific Northwest, British Columbia to Northern California</span>
+      </div>
+      </section>
+    <section class="section">
+      <h2>Form</h2>
+      <div class="form-grid">
+        <div class="form-item">
+          <span class="form-label">Type:</span>
+          <span class="form-value">Evergreen shrub</span>
+        </div>
+        <div class="form-item">
+          <span class="form-label">Height:</span>
+          <span class="form-value">3-6 ft</span>
+        </div>
+        <div class="form-item">
+          <span class="form-label">Spread:</span>
+          <span class="form-value">3-5 ft</span>
+        </div>
+        <div class="form-item">
+          <span class="form-label">Growth:</span>
+          <span class="form-value">Moderate</span>
+        </div>
+        <div class="form-item">
+          <span class="form-label">Lifespan:</span>
+          <span class="form-value">30+ years</span>
+        </div>
+        <div class="form-item">
+          <span class="form-label">Roots:</span>
+          <span class="form-value">Shallow, spreading rhizomes that colonize</span>
+        </div>
+      </div>
+    </section>
+    
+    <section class="section">
+      <h2>Growing Conditions</h2>
+      <div class="conditions-grid">
+        <div class="condition-item">
+          <span class="condition-label">Sun:</span>
+          <span class="condition-value">Part shade to full sun (more fruit in sun)</span>
+        </div>
+        <div class="condition-item">
+          <span class="condition-label">Water:</span>
+          <span class="condition-value">Moderate — drought tolerant once established</span>
+        </div>
+        <div class="condition-item">
+          <span class="condition-label">Soil:</span>
+          <span class="condition-value">Adaptable — well-drained, tolerates poor soil</span>
+        </div>
+        <div class="condition-item">
+          <span class="condition-label">Zones:</span>
+          <span class="condition-value">5-9</span>
+        </div>
+    
+        <div class="condition-item">
+          <span class="condition-label">Tolerance:</span>
+          <span class="condition-value">Drought, shade, deer resistant</span>
+        </div>
+      
+        <div class="condition-item">
+          <span class="condition-label">Pests:</span>
+          <span class="condition-value">Generally pest-free. Possible rust, leaf spot in wet conditions.</span>
+        </div>
+      
+      </div>
+    </section>
+    
+    <section class="section">
+      <h2>Phenology</h2>
+      <div class="phenology-timeline">
+        <div class="phenology-item">
+          <span class="phenology-label">Leaf out:</span>
+          <span class="phenology-value">Evergreen</span>
+        </div>
+        <div class="phenology-item">
+          <span class="phenology-label">Bloom:</span>
+          <span class="phenology-value">March-April · bright yellow racemes · fragrant · pollinated by early bees</span>
+        </div>
+        <div class="phenology-item">
+          <span class="phenology-label">Fruit:</span>
+          <span class="phenology-value">July-September · blue-purple berries with waxy bloom · clusters</span>
+        </div>
+        <div class="phenology-item">
+          <span class="phenology-label">Dormancy:</span>
+          <span class="phenology-value">Evergreen</span>
+        </div>
+      </div>
+    </section>
+    <section class="section"><h2>Human Uses</h2><div class="use-category"><h3>Food</h3>
+        <div class="use-detail">
+          <p><strong>Part:</strong> berries</p>
+          <p><strong>Preparation:</strong> jelly, juice, wine, dried</p>
+        <p><strong>Flavor:</strong> tart, grape-like</p>
+          <p><strong>Harvest:</strong> July-September</p>
+          <p><strong>Sustainable yield:</strong> 10-20 lbs/year</p>
+        <p class="use-notes">High in vitamin C. Best cooked — very tart raw.</p></div></div><div class="use-category"><h3>Medicine</h3>
+        <div class="use-detail">
+          <p><strong>Part:</strong> root bark</p>
+          <p><strong>Preparation:</strong> tincture, tea</p>
+          <p><strong>Uses:</strong> berberine extract (antibacterial, digestive), liver support</p>
+          <p><strong>Harvest:</strong> fall/winter</p>
+          <p><strong>Sustainable yield:</strong> minimal - only from pruned/damaged plants</p>
+        <p class="use-notes">Powerful antimicrobial. Consult herbalist for dosage.</p></div></div><div class="use-category"><h3>Craft</h3>
+        <div class="use-detail">
+          <p><strong>Part:</strong> inner bark and roots</p>
+          <p><strong>Preparation:</strong> dye extraction</p>
+        <p><strong>Product:</strong> yellow dye</p>
+          <p><strong>Harvest:</strong> spring</p>
+          <p><strong>Sustainable yield:</strong> from pruned branches only</p>
+        </div></div>
+      <div class="use-category">
+        <h3>Cultural & Traditional Use</h3>
+        <p class="cultural-note">Used by Coast Salish and Plateau peoples for food and medicine. Berries eaten fresh or dried, root bark for skin conditions and digestive issues.</p>
+      </div>
+      </section>
+    <section class="section">
+      <h2>Propagation</h2>
+      <ul class="propagation-list">
+    <li>rhizome division (90% success)</li><li>semi-hardwood cuttings Aug-Sep (50-70%)</li><li>seed (20-40%, slow)</li></ul></section>
+    <section class="section">
+      <h2>Where to Source</h2>
+      <p>Raintree Nursery, One Green World, local native plant sales, easy to propagate from existing specimens</p>
+    </section>
+    
+    <section class="section property-notes">
+      <h2>On the 50 Acres</h2>
+      <p>Thriving in understory throughout the 50 acres. Particularly dense stands along edges and in partial sun. Excellent candidate for guild expansion with comfrey and native strawberry groundcover. Already supporting robust bird and pollinator populations. Could sustainably harvest 15-20 lbs berries annually without impacting wildlife.</p>
+    </section>
+    
+    <section class="section bibliography">
+      <h2>Sources</h2>
+      <ul>
+    <li>Natural Capital Plant Database — Mahonia aquifolium</li><li>Plants for a Future — pfaf.org — Mahonia aquifolium</li><li>USDA PLANTS Database — Mahonia aquifolium</li><li>Oregon State University Extension — Growing Oregon Grape</li><li>Medicinal Plants of the Pacific West — Michael Moore (2011)</li><li>Native American Ethnobotany — Daniel Moerman (1998)</li><li>Coast Salish Traditional Plant Use — Nancy Turner</li></ul></section>
+    <footer class="profile-footer">
+      <p>Week 1 · 2026-03 · Food Forest Practicum</p>
+    </footer>
+    
+  </div>
+</body>
+</html>

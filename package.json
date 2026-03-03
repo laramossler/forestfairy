@@ -1,0 +1,19 @@
+{
+  "name": "forestfairy",
+  "version": "1.0.0",
+  "description": "Forest Dweller species database and plant profile generator",
+  "type": "module",
+  "scripts": {
+    "build:profiles": "node scripts/build-profiles.js",
+    "dev": "node scripts/build-profiles.js --watch"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "typescript": "^5.3.3"
+  }
+}

@@ -1,0 +1,355 @@
+/* Heirloom Botanical Guide Aesthetic */
+
+:root {
+  --cream: #fefdf8;
+  --dark-green: #2d4a2b;
+  --medium-green: #4a7c59;
+  --sage: #9caf88;
+  --brown: #6b5b4f;
+  --light-brown: #a89284;
+  --gold: #d4af37;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+  background: var(--cream);
+  color: var(--dark-green);
+  line-height: 1.7;
+  padding: 2rem;
+}
+
+.plant-profile {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  padding: 3rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--sage);
+  page-break-inside: avoid;
+}
+
+/* Header */
+.profile-header {
+  text-align: center;
+  border-bottom: 3px double var(--medium-green);
+  padding-bottom: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.common-name {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--dark-green);
+  margin-bottom: 0.5rem;
+  font-variant: small-caps;
+  letter-spacing: 1px;
+}
+
+.scientific-name {
+  font-style: italic;
+  font-size: 1.3rem;
+  color: var(--medium-green);
+  margin-bottom: 0.3rem;
+}
+
+.family {
+  font-size: 0.95rem;
+  color: var(--light-brown);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+/* Sections */
+.section {
+  margin-bottom: 2rem;
+  page-break-inside: avoid;
+}
+
+.section h2 {
+  font-size: 1.4rem;
+  color: var(--medium-green);
+  margin-bottom: 1rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--sage);
+  font-variant: small-caps;
+  letter-spacing: 1px;
+}
+
+.section h3 {
+  font-size: 1.1rem;
+  color: var(--dark-green);
+  margin-top: 1.2rem;
+  margin-bottom: 0.6rem;
+  font-weight: 600;
+}
+
+/* Etymology */
+.etymology {
+  font-style: italic;
+  color: var(--brown);
+  background: var(--cream);
+  padding: 1rem 1.5rem;
+  border-left: 3px solid var(--gold);
+}
+
+/* Meta Info */
+.meta-info {
+  background: var(--cream);
+  padding: 1rem 1.5rem;
+  border-radius: 4px;
+}
+
+.meta-row {
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+
+.meta-row:last-child {
+  margin-bottom: 0;
+}
+
+.meta-label {
+  font-weight: 600;
+  color: var(--brown);
+  min-width: 140px;
+}
+
+.meta-value {
+  color: var(--dark-green);
+}
+
+/* Form Grid */
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8rem 1.5rem;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--brown);
+  margin-bottom: 0.2rem;
+  font-weight: 600;
+}
+
+.form-value {
+  color: var(--dark-green);
+  font-size: 1rem;
+}
+
+/* Conditions Grid */
+.conditions-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem 1.5rem;
+}
+
+.condition-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.condition-label {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--brown);
+  margin-bottom: 0.2rem;
+  font-weight: 600;
+}
+
+.condition-value {
+  color: var(--dark-green);
+}
+
+/* Phenology Timeline */
+.phenology-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.phenology-item {
+  display: flex;
+  flex-direction: column;
+  padding: 0.8rem;
+  background: var(--cream);
+  border-left: 3px solid var(--medium-green);
+}
+
+.phenology-label {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--brown);
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+}
+
+.phenology-value {
+  color: var(--dark-green);
+  line-height: 1.6;
+}
+
+/* Human Uses */
+.use-category {
+  margin-bottom: 1.5rem;
+}
+
+.use-category:last-child {
+  margin-bottom: 0;
+}
+
+.use-detail {
+  background: var(--cream);
+  padding: 1rem 1.5rem;
+  margin-top: 0.8rem;
+  border-left: 3px solid var(--sage);
+}
+
+.use-detail p {
+  margin-bottom: 0.5rem;
+}
+
+.use-detail p:last-child {
+  margin-bottom: 0;
+}
+
+.use-detail strong {
+  color: var(--brown);
+  font-weight: 600;
+}
+
+.use-notes {
+  font-style: italic;
+  color: var(--medium-green);
+  margin-top: 0.8rem;
+  padding-top: 0.8rem;
+  border-top: 1px dashed var(--sage);
+}
+
+.cultural-note {
+  background: var(--cream);
+  padding: 1rem 1.5rem;
+  border-left: 3px solid var(--gold);
+  font-style: italic;
+  color: var(--brown);
+}
+
+/* Propagation */
+.propagation-list {
+  list-style: none;
+  padding: 0;
+}
+
+.propagation-list li {
+  padding: 0.6rem 1rem;
+  margin-bottom: 0.5rem;
+  background: var(--cream);
+  border-left: 3px solid var(--sage);
+}
+
+.propagation-list li:before {
+  content: "→ ";
+  color: var(--medium-green);
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+/* Property Notes */
+.property-notes {
+  background: linear-gradient(to right, var(--cream), white);
+  padding: 1.5rem;
+  border: 2px solid var(--sage);
+  border-radius: 4px;
+}
+
+.property-notes h2 {
+  color: var(--dark-green);
+  border-bottom: 2px solid var(--medium-green);
+}
+
+.property-notes p {
+  color: var(--dark-green);
+  line-height: 1.8;
+}
+
+/* Bibliography */
+.bibliography ul {
+  list-style: none;
+  padding: 0;
+}
+
+.bibliography li {
+  padding: 0.5rem 0;
+  color: var(--brown);
+  font-size: 0.95rem;
+  border-bottom: 1px dotted var(--sage);
+}
+
+.bibliography li:last-child {
+  border-bottom: none;
+}
+
+/* Footer */
+.profile-footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 3px double var(--medium-green);
+  text-align: center;
+}
+
+.profile-footer p {
+  font-size: 0.9rem;
+  color: var(--light-brown);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Print Styles */
+@media print {
+  body {
+    background: white;
+    padding: 0;
+  }
+
+  .plant-profile {
+    box-shadow: none;
+    border: none;
+    padding: 1.5rem;
+  }
+
+  .section {
+    page-break-inside: avoid;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .plant-profile {
+    padding: 1.5rem;
+  }
+
+  .form-grid,
+  .conditions-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .common-name {
+    font-size: 2rem;
+  }
+}
